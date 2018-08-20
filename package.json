@@ -1,0 +1,20 @@
+{
+  "name": "rewire-custom-path-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "babel-plugin-react-require": "^3.0.0",
+    "react-app-rewired": "^1.5.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build && open http://localhost:5000 && serve -s build",
+    "test": "react-app-rewired test --env=jsdom"
+  },
+  "config-overrides-path": "./config"
+}
